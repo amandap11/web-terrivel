@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Encomenda de Pedrinhas </title>
+	<link rel="stylesheet" href="estilo.css">
+	<script src="validacoes.js"></script>
+</head>
+<body>
+	<div id="container">
+		<form method="GET" action="http://terrivel.herokuapp.com/monster">
+			<table border="0" align="center" id="formulario">
+				<tr>
+					<label>
+						<td>Nome:</td>
+						<td><input type="text" name="nome"></td>
+					</label>
+				</tr>
+				<tr>
+					<label>
+						<td>Quantidade:</td>
+						<td><input name="num_pedras" type="number" step="1" min="0" value="1"></td>
+					</label>
+				</tr>
+				<tr>
+					<label>
+						<td>Tamanho: </td>
+						<td><input name="tam_pedras" type="number" step="0.5" min="0" max="7" value="3"></td>
+					</label>
+				</tr>
+				<tr>
+					<label>
+						<td>Cor do céu:</td>
+						<td><input type="color" name="corCeu1"></td>
+					</label>
+				</tr>
+				<tr>
+					<label>
+						<td>Cor do céu:</td>
+						<td><input type="color" name="corCeu2"></td>
+					</label>
+				</tr>
+				<tr>
+					<label>
+						<td>Tipo de Pedra: </td>
+						<td>
+							<select name="tipo_pedras">
+								<option value="marroada">Marroada</option>
+								<option value="ametista">Ametista</option>
+								<option value="topazio">Topázio</option>
+								<option value="espinela">Espinela</option>
+							</select>
+						</td>
+					</label>
+				</tr>
+			</table>
+
+			<button type="submit" align="right">Enviar</button>
+	
+		</form>
+	</div>
+</body>
+</html>
